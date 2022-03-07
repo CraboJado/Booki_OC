@@ -1,0 +1,20 @@
+/* 
+break-point : <768 
+              >=992px
+
+*/
+
+:root {
+    --main-blue:#0065FC;
+    --secondary-blue:#DEEBFF;
+    --bcg-color:#F2F2F2;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family: 'Raleway', sans-serif;
+}
