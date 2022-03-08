@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- icon CDN -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- google font -->
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
 
@@ -15,21 +16,179 @@
     <title>Booki</title>
 </head>
 <body>
-    <header>
+    <!-- Header -->
+    <header id="header">
         <h1 class="logo">
-            <img src="./images/logo/Booki.png" alt="">
+            <img srcset="./images/logo/Booki.png 2x,
+                        ./images/logo/Booki@3x.png 3x"
+                src="./images/logo/Booki.png" alt="Booki logo"/>
         </h1>
         <nav class="right-nav">
            <ul class="nav-list">
-               <li class="nav-item">Hébergement</li>
-               <li class="nav-item">Activités</li>
+                <li class="nav-item">
+                   <a href="#">Hébergement</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">Activités</a>
+                </li>
            </ul>
         </nav>
     </header>
-    <main>
-        <section></section>
+    <!-- Main -->
+    <main id="main">
+        <!-- article search -->
+        <article class="search">
+            <h2 class="search-title">Trouvez votre hébergement pour des vacances de rêve</h2>
+            <h3 class="search-subtitle">En plein centre ville ou en plein nature</h3>
+            <form action="" class="search-form">
+                <div class="search-input">
+                    <label for="city">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </label>
+                    <input type="" id="city" name="city" placeholder="Marseille, France" autocomplete="off">
+                </div>
+                <button type="submit">Rechercher</button>
+            </form>
+            <div class="search-filter">
+                <h2 class="search-filter-title">Filtres</h2>
+                <ul class="search-filter-List">
+                    <li class="search-filter-list-item">
+                        <i class="fa-solid fa-money-bill-wave"></i>
+                        <span>Économique</span>
+                    </li>
+                    <li class="search-filter-list-item">
+                        <i class="fa-solid fa-child"></i>
+                        <span>Familial</span>
+                    </li>
+                    <li class="search-filter-list-item">
+                        <i class="fa-solid fa-heart"></i>
+                        <span>Romantique</span>
+                    </li>
+                    <li class="search-filter-list-item">
+                        <i class="fa-solid fa-dog"></i>
+                        <span>Animaux autorisés</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="search-info">
+                <i class="fa-solid fa-info"></i>
+                <p>Plus de 500 logements sont disponibles dans cette ville</p>
+            </div>
+
+        </article>
+        <!-- article lodging -->
+        <article class="lodging">
+            <section class="lodging-main">
+                <h2>Hébergement à Marseille</h2>
+                <ul class="lodging-main-cards">
+                    <li class="lodging-main-card">
+                        <a href="#">
+                            <img srcset="./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg 750w,
+                                         ./images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg 1499w,
+                                         ./images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg 2997w,
+                                         ./images/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg 5993w "
+                                 size = "(max-width: 767.98px) 100vw,
+                                         (max-width: 991.98px) 40vw,
+                                         25vw"
+                            src="./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="">
+                            <div class="card-content">
+                                <h3>Auberge La Cannebière</h3>
+                                <p>Nuit à partir de 25€</p>
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <p>Afficher plus</p>
+            </section>
+            <section class="lodging-popular">
+                <div>
+                    <h2>Les plus populaires</h2>
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <ul class="lodging-popular-cards">
+                    <li class="lodging-popular-card">
+                        <a href="#">
+                            <img src="" alt="">
+                            <div class="card-content">
+                                <h3>Hôtel Le soleil du matin</h3>
+                                <p>Nuit à partir de 128€</p>
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li></li>
+                    <li></li>
+                </ul>
+
+            </section>
+        </article>
+        <!-- article activity -->
+        <article class="activity">
+            <h2>Activités à Marseille</h2>
+            <ul class="activity-cards">
+                <li class="activity-card">
+                    <a href="#">
+                        <figure>
+                            <img src="" alt="">
+                            <figcaption>Vieux Port</figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li class="activity-card">
+                    <a href="#">
+                        <figure>
+                            <img src="" alt="">
+                            <figcaption>Vieux Port</figcaption>
+                        </figure>
+                    </a>
+                    <a href="#">
+                        <figure>
+                            <img src="" alt="">
+                            <figcaption>Vieux Port</figcaption>
+                        </figure>
+                    </a>
+                </li>
+            </ul>
+        </article>
     </main>
-    <footer></footer>
+    <!-- footer -->
+    <footer id="footer">
+        <div class ="about">
+            <h2 class="footer-title">A propos</h2>
+            <nav class = "footer-navbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#">Fonctionnement du site</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">Conditions générales de vente</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">données et confidentialité</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+    </footer>
     
 </body>
 </html>
