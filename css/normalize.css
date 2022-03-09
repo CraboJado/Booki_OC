@@ -354,3 +354,7 @@ template {
 ul {
   list-style: none;
 }
+
+h2,h3 {
+  font-size: inherit;
+}

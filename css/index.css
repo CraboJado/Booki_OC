@@ -17,7 +17,7 @@ break-point : <768
 body {
     
     font-family: 'Raleway', sans-serif;
-    max-width: 1280px;
+    max-width: 1400px;
     margin: auto;
     
 }
@@ -31,8 +31,12 @@ body {
 #header {
     align-items: center;
     justify-content: space-between;
-    padding: 0 68px;
+    padding: 0 50px;
     
+}
+
+.logo {
+    margin-bottom: 15px;
 }
 
 .header-navbar {
@@ -57,12 +61,12 @@ body {
     height:1px;
     position: absolute;
     left: 0;
-    top:-30px;
+    top:-28px;
 }
 
 /*********** article search **********/
 .search{
-    padding:0 48px;
+    padding:0 34px;
 }
 
 .search-title {
@@ -148,11 +152,11 @@ body {
 }
 
 .search-info {
-    display: flex;
+    align-items: flex-start;
     gap:10px;
     font-size: 12px;
     font-weight:bold;
-    align-items: flex-start;
+    
 }
 
 .search-info i {
@@ -168,7 +172,144 @@ body {
    margin-top: 5px;
 }
 
+/*************** article lodging *****************/
+    /*********** common style ************/
+.lodging {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 34px;
+    font-size: 18px;
+}
 
+.cards {
+   display: flex;
+}
+
+.card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.lodging-main,
+.lodging-popular {
+    border-radius: 10px;
+    background-color: var(--bcg-color);
+}
+
+.lodging-popular-card,
+.lodging-main-card {
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: white;
+    margin-bottom: 10px;
+    padding: 3px;
+}
+
+.card-content{
+    padding:0 10px;
+    font-size: 12px;
+}
+
+.card-content h3 {
+    margin-bottom: 0;
+}
+
+.card-content P {
+    margin-top: 0;
+}
+
+.star-icons {
+    color:var(--main-blue);
+}
+
+.star-gray {
+    color:var(--bcg-color);
+}
+
+        /******** section lodging-main *********/
+.lodging-main {
+    flex-basis: 65%;
+}
+
+.lodging-main h2 {
+    margin-top: 36px;
+    margin-left:26px ;
+}
+
+.lodging-main-cards {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding:0 12px;
+}
+
+.lodging-main-card {
+    flex-basis: 30% ;
+}
+
+.lodging-main-card .card-img {
+    height:115px;
+}
+
+.lodging-main-card img {
+    border-radius: 10px 10px 0 0;
+}
+
+.lodging-main > p {
+    padding-left: 26px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+        /******** section lodging-popular *********/
+.lodging-popular {
+    flex-basis: 25%;
+}
+.lodging-popular-title {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+    margin-top: 36px;
+}
+
+.lodging-popular-title h2 {
+    margin: 0;
+}
+
+.lodging-popular-cards {
+    flex-direction: column;
+    padding:0 18px;
+    margin-top: 20px;
+}
+
+.lodging-popular-card a{
+    display: flex;
+}
+
+.lodging-popular-card .card-img,
+.lodging-popular-card .card-content{
+    flex-basis: 50%;
+}
+
+.lodging-popular-card .card-img{
+    height: 132px;
+}
+
+.lodging-popular-card img {
+    border-radius: 10px 0 0 10px;
+}
+
+.lodging-popular-card .card-content{
+    padding-left: 15px;
+}
+
+.lodging-popular-card p {
+    margin-top: 10px;
+}
+
+.lodging-popular-card .star-icons {
+    margin-top:40px;
+}
 
 
   
