@@ -311,5 +311,96 @@ body {
     margin-top:40px;
 }
 
+/****************** Article activity ****************/
 
-  
+.activity-card,
+.activity-card a,
+.activity-card figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.activity-card:nth-child(2n+1),
+.activity-card:nth-child(2n) a {
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+}
+
+.activity-card:nth-child(2n+1) a,
+.activity-card:nth-child(2n+1) figure,
+.big-card figcaption,
+.small-card-down figcaption,
+.activity-card:last-child figcaption {
+    flex: 1;
+}
+
+.activity-title {
+    padding-left: 30px;
+    margin-top: 30px;
+}
+
+.activity-cards {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+
+.activity-cards img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.activity-card {
+    width: 23%;
+    height: 444px;
+}
+
+.activity-card:nth-child(2n) {
+    gap:40px;
+}
+
+
+.big-card img {
+    flex:9;
+}
+
+.activity-card figcaption {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.activity-card:nth-child(2n) figure {
+  height:100%;
+}
+
+.small-card-up {
+    height: 60%;
+}
+
+.small-card-up img{
+    height: 83%;
+}
+
+.small-card-up figcaption {
+    flex:1;
+}
+
+.small-card-down {
+    height: 30%;
+}
+
+.small-card-down img{
+    height: 66%;
+}
+
+.activity-card:last-child a  {
+    height:45%;
+}
+
+.activity-card:last-child img {
+    height:77%;
+}
+

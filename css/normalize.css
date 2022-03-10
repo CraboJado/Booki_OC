@@ -351,10 +351,16 @@ template {
   display: none;
 }
 
+/* reset */
+
 ul {
   list-style: none;
 }
 
 h2,h3 {
   font-size: inherit;
+}
+
+figure {
+  margin:0;
 }
