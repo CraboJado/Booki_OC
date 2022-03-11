@@ -89,10 +89,10 @@ body {
     align-items: center;
 }
 
-.search-form {
+/* .search-form {
     width: 30%;
     min-width: 420px;
-}
+} */
 
 .search-input label {
     background-color: var(--bcg-color);
