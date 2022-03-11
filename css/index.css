@@ -24,7 +24,7 @@ body {
 
 /**************** Header ******************/
 #header,
-.navbar-nav {
+#header .navbar-nav {
     display: flex;
 }
 
@@ -64,7 +64,7 @@ body {
     top:-28px;
 }
 
-/*********** article search **********/
+/*********** section search **********/
 .search{
     padding:0 34px;
 }
@@ -172,7 +172,7 @@ body {
    margin-top: 5px;
 }
 
-/*************** article lodging *****************/
+/*************** section lodging-main *****************/
     /*********** common style ************/
 .lodging {
     display: flex;
@@ -227,7 +227,6 @@ body {
     color:var(--bcg-color);
 }
 
-        /******** section lodging-main *********/
 .lodging-main {
     flex-basis: 65%;
 }
@@ -261,7 +260,7 @@ body {
     font-weight: bold;
 }
 
-        /******** section lodging-popular *********/
+/********** section lodging-popular *********/
 .lodging-popular {
     flex-basis: 25%;
 }
@@ -311,7 +310,7 @@ body {
     margin-top:40px;
 }
 
-/****************** Article activity ****************/
+/****************** section activity ****************/
 
 .activity-card,
 .activity-card a,
@@ -344,6 +343,8 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 0 30px;
+    font-size: 14px;
+    font-weight: bold;
 }
 
 .activity-cards img {
@@ -404,3 +405,25 @@ body {
     height:77%;
 }
 
+/*************** footer *************/
+
+#footer {
+    display: flex;
+    gap: 182px;
+    padding: 0 30px;
+    margin-top: 52px;
+    background-color: var(--bcg-color);
+    font-size: 14px;
+}
+
+
+.footer-title {
+    margin-top: 48px;
+}
+
+#footer .navbar-nav{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap:18px;
+}
