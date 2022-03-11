@@ -481,6 +481,10 @@ body {
         align-items: center;
     }
 
+    .activity-title {
+        margin:50px 0 30px;
+    }
+
     .activity-cards {
         flex-wrap: wrap;
         gap: 28px;
@@ -492,6 +496,11 @@ body {
 
     .activity-card:nth-child(3) {
         order:4;
+    }
+
+    #footer {
+        justify-content: space-between;
+        gap: 0;
     }
 
 }
