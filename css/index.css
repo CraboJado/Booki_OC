@@ -82,7 +82,7 @@ body {
 
 .search-form,
 .search-filter,
-.search-filter-List,
+.search-filter-list,
 .search-filter-list-item,
 .search-info {
     display: flex;
@@ -93,6 +93,10 @@ body {
     width: 30%;
     min-width: 420px;
 } */
+
+.search-input{
+    display: flex;
+}
 
 .search-input label {
     background-color: var(--bcg-color);
@@ -115,6 +119,10 @@ body {
     border-radius: 0 10px 10px 0;
 }
 
+.search-form .search-icon {
+    display: none;
+}
+
 .search-input label,
 .search-input input {
     border: 1px solid var(--bcg-color);
@@ -128,7 +136,7 @@ body {
     font-size: 16px;
 }
 
-.search-filter-List{
+.search-filter-list{
     padding-left: 0;
     margin-top: 26px;
     gap:24px;
@@ -435,11 +443,11 @@ body {
 /* for medium screen, tablette */
 @media screen and (max-width:991.98px) {
 
-    .search-filter-List{
+    .search-filter-list{
         flex-wrap: wrap;
     }
 
-    .search-filter-List {
+    .search-filter-list {
         gap:15px;
     }
 
@@ -512,6 +520,7 @@ body {
     #header{
         flex-wrap: wrap;
         padding: 0;
+        font-size: 12px;
     }
 
     .logo {
@@ -536,20 +545,79 @@ body {
         justify-content: center;
     }
 
-    .header-navbar .nav-item:nth-child(1)::before {
+
+
+    .header-navbar .nav-item:nth-child(1)::before,
+    .header-navbar .nav-item:nth-child(2)::before {
         height:3px;
-        top:29px;
+        top:22px;
     }
 
     .header-navbar .nav-item:nth-child(2)::before {
         content:"";
         background-color: var(--bcg-color);
         width: 100%;
-        height: 3px;
         position: absolute;
         left:0px;
-        top:29px;
     }
+
+    /**************** section search ***************/
+
+    .search{
+        display: flex;
+        flex-direction: column;
+        gap:8px;
+        padding:0 20px;
+    }
+    .search-title {
+        margin-top: 12px;
+    }
+    .search-subtitle {
+        font-size: 12px;
+    }
+    .search-form {
+        position: relative;
+        padding-right: 28px;
+        max-width: 500px;
+    }
+
+    .search-input,
+    .search-input input {
+        flex:1;
+    }
+
+    .search-form button {
+        display: none;
+    }
+
+    .search-form .search-icon {
+        display: block;
+        padding: 12px;
+        background-color: var(--main-blue);
+        color: white;
+        border-radius: 12px;
+        position: absolute;
+        left: unset;
+        right: 0;;
+    }
+
+    .search-filter {
+        flex-direction: column;
+        align-items: flex-start;
+        gap:0;
+    }
+
+    .search-filter-list {
+        margin-top: 0;
+        gap:12px;
+    }
+
+    .search-filter-list-item {
+        margin-right: 0;
+    }
+
+    /*  */
+
 
     
 
