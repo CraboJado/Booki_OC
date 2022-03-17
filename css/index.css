@@ -186,7 +186,7 @@ body {
 }
 
 /*************** section lodging-main *****************/
-    /*********** common style ************/
+
 .lodging {
     display: flex;
     justify-content: space-around;
@@ -446,7 +446,6 @@ body {
     font-size: 14px;
 }
 
-
 .footer-title {
     margin-top: 48px;
 }
@@ -457,8 +456,6 @@ body {
     flex-direction: column;
     gap:18px;
 }
-
-
 
 /* media query */
 /* for medium screen, tablette */
@@ -535,9 +532,7 @@ body {
         justify-content: space-between;
         gap: 0;
     }
-
 }
-
 
 /* media query */
 /* for phone screen */
@@ -650,7 +645,7 @@ body {
     }
 
     /**********section lodging-main **********/
-
+    
     .lodging {
         padding:0;
         gap:0;
