@@ -171,7 +171,6 @@ body {
     gap:10px;
     font-size: 12px;
     font-weight:bold;
-    
 }
 
 .search-info i {
@@ -218,6 +217,7 @@ body {
 .lodging-main-cards,
 .lodging-popular-cards {
     display: flex;
+    gap:10px;
 }
 
 .lodging-main-cards {
@@ -226,7 +226,6 @@ body {
     padding:0 12px;
 }
 
-
 .lodging-popular-card,
 .lodging-main-card {
     border: 1px solid white;
@@ -234,6 +233,7 @@ body {
     background-color: white;
     margin-bottom: 10px;
     padding: 3px;
+    box-shadow: 0 0 9px 3px rgba(0,0,0,.1);
 }
 
 .lodging-main-card {
@@ -300,8 +300,6 @@ body {
 .star-gray {
     color:var(--bcg-color);
 }
-
-
 
 .lodging-popular {
     flex-basis: 28%;
@@ -392,7 +390,6 @@ body {
     gap:40px;
 }
 
-
 .big-card img {
     flex:9;
 }
@@ -457,6 +454,7 @@ body {
     gap:18px;
 }
 
+/************************************/
 /* media query */
 /* for medium screen, tablette */
 @media screen and (max-width:991.98px) {
@@ -477,14 +475,6 @@ body {
         flex-direction: column;
         gap: 45px;
         padding: 0 30px;
-    }
-
-    .lodging-main-cards {
-        gap:10px;
-    }
-
-    .lodging-popular-cards {
-        gap:10px;
     }
 
     .lodging-popular-card {
@@ -649,7 +639,6 @@ body {
     .lodging {
         padding:0;
         gap:0;
-
     }
 
     .lodging-main {
@@ -668,7 +657,6 @@ body {
     }
 
     .lodging-main-card {
-        box-shadow: 0 0 16px rgba(0,0,0,.1);
         border-radius: 16px;
     }
 
