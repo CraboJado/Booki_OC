@@ -725,6 +725,10 @@ body {
         width: 100%;
     }
 
+    .activity-card:nth-child(2n){
+        gap:28px;
+    }
+
     .activity .activity-card figure {
         flex:unset;
         height: 188px;
